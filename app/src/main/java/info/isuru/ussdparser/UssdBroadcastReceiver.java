@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-/**
- * Created by F5094712 on 2019/02/19.
- */
 
 public class UssdBroadcastReceiver extends BroadcastReceiver {
     Listener listener;
@@ -21,7 +18,7 @@ public class UssdBroadcastReceiver extends BroadcastReceiver {
         if(intent.getAction().equalsIgnoreCase("info.isuru.ussdparser.action.REFRESH")){
             Bundle bundle = intent.getExtras();
             String message = bundle.getString("message");
-            Log.d("XXX", message);
+            Log.d("USSD_LOG", message);
             this.listener.updateResult(message);
         }
     }
