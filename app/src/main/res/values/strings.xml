@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">USSDParser</string>
+    <string name="service_decription">This service records pop ups sent by your mobile operator, and saves them in USSDParser App. It is absolutely safe to use.</string>
+
+</resources>
